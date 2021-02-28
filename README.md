@@ -39,10 +39,13 @@ Para rodar este projeto:
 
 ## Instruções de utilização
 Ao executar o programa, será exibida uma lista de possíveis ações à serem tomadas, como: Cadastro/Consulta de pessoas, salas e espaços de café, além de sair, que irá printar a lista completa de pessoas, salas e espaços de café em cada etapa do treinamento e não deixará realizar mais modificações.
+A cada opção selecionada, o sistema mostrará o que deverá ser feito.
 Vale ressaltar que ao iniciar, o programa irá consultar o banco de dados para carregar as listas existentes.
-Caso a pessoa/sala/espaço já esteja cadastrada, o sistema impedirá o recadastramento.
-Caso não haja espaço nas salas e espaços de café para uma nova pessoa, o sistema impedirá o cadastramento da pessoa.
-Caso a sala não tenha espaço o suficiente para abrigar todas as pessoas cadastradas e obedecer o requisito "A diferença de pessoas em cada sala deverá ser de no máximo 1 pessoa.", o sistema impedirá o cadastramento da nova sala.
+A seguir, uma lista de possíveis impedimentos de cadastramentos.
+- Caso a pessoa/sala/espaço já esteja cadastrada, o sistema impedirá o recadastramento.
+- Caso não haja espaço nas salas e espaços de café para uma nova pessoa, o sistema impedirá o cadastramento da pessoa.
+- Caso a sala não tenha espaço o suficiente para abrigar todas as pessoas cadastradas e obedecer o requisito "A diferença de pessoas em cada sala deverá ser de no máximo 1 pessoa.", o sistema impedirá o cadastramento da nova sala.
+
 
 ## Persistencia de Dados
 Os dados são salvos em 3 arquivos diferentes: "Espacos.txt", "Pessoas.txt" e "Salas.txt", onde cada linha representa um objeto dessas classes, com os atributos sendo separados por ",". Caso algum desses arquivos esteja faltando, o programa reiniciará o banco de dados.
