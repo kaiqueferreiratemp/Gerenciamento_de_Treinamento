@@ -99,7 +99,11 @@ public class Sistema {
                         break;
                     }
                     System.out.println("Favor digitar a lotacao maxima:");
-                    sala.setLotacao(scanName.nextInt());
+                        if(scanName.hasNextInt())       sala.setLotacao(scanName.nextInt());
+                      else {
+                          System.out.println("Error: não foi informado um número inteiro!");
+                          break;
+                        }
                     if (Functions.LotacaoEValida(sala.lotacao)) {//lotacao válida
                         try {
                             salaPersister.escritaSalas(sala);
@@ -122,7 +126,11 @@ public class Sistema {
                         break;
                     }
                     System.out.println("Favor digitar a lotacao maxima:");
-                    espaco.setLotacao(scanName.nextInt());
+                    if(scanName.hasNextInt())       espaco.setLotacao(scanName.nextInt());
+                    else {
+                        System.out.println("Error: não foi informado um número inteiro!");
+                        break;
+                    }
                     try {
                         espacoPersister.escritaEspaco(espaco);
                     } catch (IOException e) {
