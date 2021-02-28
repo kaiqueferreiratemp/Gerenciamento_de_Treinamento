@@ -47,9 +47,9 @@ Caso a sala não tenha espaço o suficiente para abrigar todas as pessoas cadast
 ## Persistencia de Dados
 Os dados são salvos em 3 arquivos diferentes: "Espacos.txt", "Pessoas.txt" e "Salas.txt", onde cada linha representa um objeto dessas classes, com os atributos sendo separados por ",". Caso algum desses arquivos esteja faltando, o programa reiniciará o banco de dados.
 
--Espacos: Nome, lotacao;
--Pessoas: Nome, sobrenome;
--Salas: Nome, lotacao;
+- Espacos: Nome, lotacao
+- Pessoas: Nome, sobrenome
+- Salas: Nome, lotacao
 
 ## Support
 Qualquer dúvida, entrar em contato via e-mail: kaiquee.f@hotmail.com
